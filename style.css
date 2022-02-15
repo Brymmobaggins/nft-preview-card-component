@@ -1,0 +1,117 @@
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Cyan: hsl(178, 68%, 59%);
+  --Soft-blue: hsl(215, 51%, 70%);
+}
+body {
+  background-color: var(--main-bg);
+  font-family: "Outfit", "san-serif";
+  color: var(--White);
+}
+.card {
+  width: 300px;
+  height: 520px;
+  padding: 25px;
+  margin: 50px auto;
+  background-color: var(--card-bg);
+  border-radius: 6px;
+}
+.card .card-img {
+  position: relative;
+}
+.card .card-img div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 68%, 59%, 60%);
+  width: 100%;
+  height: calc(100% - 5px);
+  /* height: 100%; */
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.card .card-img div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.card .card-img div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-img img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.card .card-img img:hover {
+  cursor: pointer;
+}
+p {
+  color: var(--Soft-blue);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.crypto-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--White);
+}
+h2:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+}
+.avatar {
+  display: flex;
+  align-self: center;
+}
+.avatar-info p {
+  margin-left: 8px;
+}
+.etherum {
+  display: flex;
+  color: var(--Cyan);
+  font-weight: 400;
+}
+.days {
+  display: flex;
+  justify-content: center;
+  color: var(--Soft-blue);
+}
+.days img,
+.etherum img {
+  margin-right: 10px;
+}
+.avatar-img {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.avatar-img img {
+  width: 40px;
+  border: 1px solid var(--White);
+  margin-right: 10px;
+  border-radius: 50%;
+  /* margin: 10px; */
+}
+.avatar span {
+  color: var(--White);
+}
+.avatar span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
